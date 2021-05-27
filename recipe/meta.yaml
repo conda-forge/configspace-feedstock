@@ -1,5 +1,5 @@
 {% set name = "ConfigSpace" %}
-{% set version = "0.4.18" %}
+{% set version = "0.4.19" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ConfigSpace-{{ version }}.tar.gz
-  sha256: 42992801598fbccc2a81674ac16f2961b0f1e5698c2e2f91adb3b96260c07da1
+  sha256: f7d35c0d7155e1e757c8a3797750098cc12ab77e447c38c8da07e74b6adb11f3
 
 build:
   number: 0
