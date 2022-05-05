@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [python.endswith("73_pypy")]
+  skip: true  # [not linux or python_impl == 'pypy']
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
