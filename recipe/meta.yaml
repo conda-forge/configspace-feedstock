@@ -1,5 +1,5 @@
 {% set name = "ConfigSpace" %}
-{% set version = "0.4.20" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ConfigSpace-{{ version }}.tar.gz
-  sha256: 2e4ca06f5a6a61e5322a73dd7545468c79f2a3e8385cab92fdada317af41d9e9
+  sha256: c8b61fe119829c29c47fc8719bb5f5740ae3034c793040f7bff67dbc9eb9c754
 
 build:
-  number: 1
-  skip: true  # [py2k]
+  number: 0
+  skip: true  # [not linux or python_impl == 'pypy']
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,11 +23,14 @@ requirements:
     - numpy
     - pip
     - python
+    - setuptools
+    - wheel
   run:
     - cython
     - pyparsing
     - python
     - {{ pin_compatible('numpy') }}
+    - scipy
 
 test:
   imports:
