@@ -240,5 +240,5 @@ Feedstock Maintainers
 =====================
 
 * [@BastianZim](https://github.com/BastianZim/)
-* [@hadim](https://github.com/hadim/)
+* [@mfeurer](https://github.com/mfeurer/)
 
