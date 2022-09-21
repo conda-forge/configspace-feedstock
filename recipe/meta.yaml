@@ -1,5 +1,5 @@
 {% set name = "ConfigSpace" %}
-{% set version = "0.6.0" %}
+{% set version = "0.4.21" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ConfigSpace-{{ version }}.tar.gz
-  sha256: 9b6c95d8839fcab220372673214b3129b45dcd8b1179829eb2c65746cacb72a9
+  sha256: 09c5ee343f2850865609cc91f2ab27da0a6182f7f196354f9550f6da578ea827
 
 build:
   number: 0
@@ -31,7 +31,6 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - scipy
-    - typing_extensions
 
 test:
   imports:
