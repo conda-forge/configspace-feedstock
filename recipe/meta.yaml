@@ -31,7 +31,7 @@ requirements:
     - pyparsing
     - scipy
     - typing_extensions
-    - more_itertools
+    - more-itertools
 
 test:
   imports:
