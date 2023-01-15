@@ -26,13 +26,12 @@ requirements:
     - setuptools
     - wheel
   run:
-    - more-itertools
-    - typing-extensions
-    - cython
-    - pyparsing
     - python
     - {{ pin_compatible('numpy') }}
+    - pyparsing
     - scipy
+    - typing_extensions
+    - more_itertools
 
 test:
   imports:
