@@ -27,7 +27,6 @@ requirements:
     - setuptools
     - wheel
   run:
-    - typing-extensions
     - python
     - {{ pin_compatible('numpy') }}
     - pyparsing
@@ -38,7 +37,6 @@ requirements:
 test:
   imports:
     - ConfigSpace
-    - ConfigSpace.nx
   commands:
     - pip check
   requires:
