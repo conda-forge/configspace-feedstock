@@ -31,7 +31,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - more_itertools
+    - more-itertools
     - numpy
     - python
     - pyparsing
